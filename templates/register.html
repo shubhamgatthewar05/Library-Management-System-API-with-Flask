@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+<h2>Register</h2>
+
+<form method="POST">
+    <label>Username</label>
+    <input type="text" name="username" required>
+    <label>Password</label>
+    <input type="password" name="password" required>
+    <button type="submit">Register</button>
+</form>
+{% endblock %}
